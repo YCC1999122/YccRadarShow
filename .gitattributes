@@ -1,9 +1,2 @@
-# 大文件使用 Git LFS 管理
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.fbx !text !filter !merge !diff
-*.png !text !filter !merge !diff
-*.jpeg !text !filter !merge !diff
-*.jpg !text !filter !merge !diff
+# 不使用 Git LFS（GitHub Pages 不支持 LFS 指针文件访问）
+# 所有文件直接用 git 管理（均 < 100MB）
